@@ -19,3 +19,8 @@ gst-launch-1.0 v4l2src ! videoconvert ! fpsdisplaysink video-sink=xvimagesink te
 ```
 gst-launch-1.0 v4l2src ! videoconvert ! fpsdisplaysink video-sink=fakesink text-overlay=false sync=false -v 2>&1
 ```
+
+---
+- SFX
+
+sudo i2ctransfer -f -y 9 w4@0x3d 0x10 0x16 0x00 0x0F
