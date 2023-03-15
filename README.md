@@ -10,6 +10,7 @@ https://blog.csdn.net/zifehng/article/details/60321966
 
 
 ---
+# GStreamer
 
 - 播放並顯示FPS
 ```
@@ -21,6 +22,13 @@ gst-launch-1.0 v4l2src ! videoconvert ! fpsdisplaysink video-sink=fakesink text-
 ```
 
 ---
-- SFX
-
+# IC2
+## SFX
+- write
+```
 sudo i2ctransfer -f -y 9 w4@0x3d 0x10 0x16 0x00 0x0F
+```
+- read
+```
+sudo i2ctransfer -f -y 9 w2@0x3d 0x10 0x16 r2
+```
